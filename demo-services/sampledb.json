@@ -1,0 +1,64 @@
+{
+  "accounts":[
+    {
+      "id": 0,
+      "number": 1,
+      "balance": 132000,
+      "currency": "CHF"
+    },
+    {
+      "id": 1,
+      "number": 2,
+      "balance": 80000,
+      "currency": "CHF"
+    },
+    {
+      "id": 2,
+      "number": 3,
+      "balance": 23000,
+      "currency": "CHF"
+    },
+    {
+      "id": 3,
+      "number": 4,
+      "balance": 1000,
+      "currency": "EUR"
+    }
+  ],
+  "relationships": [
+    {
+      "id": 0,
+      "number": 1,
+      "accounts": [ 1 ],
+      "deposits": []
+    },
+    {
+      "id": 1,
+      "number": 2,
+      "accounts": [ 2 ],
+      "deposits": [ 0, 1 ]
+    },
+    {
+      "id": 2,
+      "number": 3,
+      "accounts": [ 0, 3 ],
+      "deposits": []
+    }
+  ],
+  "persons":[
+    {
+      "id": 0,
+      "name": "Mauro Rosso",
+      "relationships": [
+        2
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Matteo Padovano",
+      "relationships": [
+        0, 1
+      ]
+    }
+  ]
+}
